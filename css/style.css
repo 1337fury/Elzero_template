@@ -1290,3 +1290,90 @@ header nav ul li.other_links:hover .mega_menu {
     font-style: normal;
 }
 /* END OUR AWESOME STATS */
+/* START DISCOUNT SECTION STYLE  */
+section.discount {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    display: flex;
+    position: relative;
+    background-image: url('../image/discount-background1.jpg');
+    background-size: cover;
+}
+.discount .left,
+.discount .right {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    flex-basis: 50%;
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.discount .left {
+    color: #fff;
+    position: relative;
+    z-index: 99;
+}
+.discount .left::before {
+    content: "";
+    position: absolute;
+    background-color: #1787e0f5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.discount .left h1 {
+    color: #fff;
+    font-size: 4.2rem;
+    text-transform: capitalize;
+}
+.discount .left p {
+    line-height: 1.7;
+    font-size: 1.7rem;
+}
+.discount .left img {
+    height: 30rem;
+    margin-top: 4rem;
+}
+.discount  .right {
+    background-color: #fff;
+}
+.discount  .right h1 {
+    text-transform: capitalize;
+    color: #000;
+    font-size: 4.2rem;
+}
+.discount  .right form {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+.discount  .right form input,
+.discount  .right form textarea {
+    background-color: #f9f9f9;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 1.5rem .8rem;
+    outline: none;
+    font-size: 1.5rem;
+    width: 35rem;
+}
+.discount  .right form input::placeholder,
+.discount  .right form textarea::placeholder {
+    text-transform: capitalize;
+    color: #777;
+}
+.discount  .right form textarea {
+    height: 20rem;
+}
+.discount  .right form input[type = "submit"] {
+    background-color: var(--second-color);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: none;
+    text-transform: capitalize;
+}
+/* END DISCOUNT SECTION STYLE */
