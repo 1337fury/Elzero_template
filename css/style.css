@@ -1211,3 +1211,82 @@ header nav ul li.other_links:hover .mega_menu {
     margin-top: 1rem;
 }
 /* END TOP VEDIOS SECTION STYLE  */
+/* START OUR AWESOME STATS */
+.stats {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    position: relative;
+}
+.stats::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/stats.jpg);
+    filter: opacity(.1);
+    z-index: -1;
+}
+.stats .container {
+    text-align: center;
+}
+.stats h1 {
+    font-size: 3.6rem;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+.stats .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+.stats .card {
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    color: var(--main-Color);
+    align-items: center;
+    padding: 4rem 0;
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+}
+.stats .card::before,
+.stats .card::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: var(--main-Color);
+}
+.stats .card::before {
+    left: -3px;
+    bottom: 0;
+}
+.stats .card::after {
+    right: -3px;
+    top: 0;
+}
+.stats .card:hover::before,
+.stats .card:hover::after {
+    height: 100%;
+    transition: 1.3s;
+}
+.stats .card i {
+    font-size: 3.5rem;
+    color: #000;
+}
+.stats .card span.stat_num {
+    font-size: 4.8rem;
+    font-weight: bold;
+    display: inline-block;
+    color: #303232;
+    font-style: normal;
+}
+/* END OUR AWESOME STATS */
