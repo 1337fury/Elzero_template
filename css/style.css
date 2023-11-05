@@ -602,3 +602,83 @@ header nav ul li.other_links:hover .mega_menu {
     font-size: 1.7rem;
 }
 /* END TESTIMONIALS SECTION STYLE */
+/* START TEAM MEMBERSTEAM MEMBERS SECTION STYLE  */
+.members .container {
+    margin-top: 10rem;
+    column-gap: 3rem;
+    row-gap: 7rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    position: relative;
+}
+.members .container .card {
+    position: relative;
+    z-index: 99;
+    
+}
+.members .container .card:hover::after{
+    width: calc(100% - 65px);
+    transition: var(--main-transition);
+}
+.members .container .card:hover img {
+    filter: grayscale(100%);
+    transition: var(--main-transition);
+}
+.members .container .card::before {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    width: calc(100% - 65px);
+    height: 109%;
+    background-color: #ececec;
+    content: '';
+    z-index: -1;
+    border-radius: 10px;
+}
+.members .container .card::after {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    width: 0;
+    height: 109%;
+    background-color: #e4e4e4;
+    content: '';
+    z-index: -1;
+    border-radius: 10px;
+}
+.members .container .card .info {
+    display: flex;
+}
+.members .container .card .info img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+.members .container .card .info .social {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    padding: 0 1.8rem;
+}
+.members .container .card .info .social i {
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #777;
+}
+.members .container .card .details {
+    padding: 2rem 1.5rem;
+    margin-left: 65px;
+}
+.members .container .card .details h1 {
+    color: var(--main-Color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 0 1.2rem;
+    text-transform: capitalize;
+}
+.members .container .card .details p {
+    font-size: 1.6rem;
+    line-height: 1.7;
+}
+/* END TEAM MEMBERSTEAM MEMBERS SECTION STYLE  */
