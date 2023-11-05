@@ -879,3 +879,129 @@ header nav ul li.other_links:hover .mega_menu {
     padding: 1.5rem 0;
 }
 /* END HOW IT WORKS SECTION STYLE  */
+/* START EVENTS SECTION STYLE  */
+.events {
+    position: relative;
+}
+.events::before, .events::after {
+    width: 160px;
+    height: 100px;
+    background-image: url("../image/dots.png");
+    animation: zoom 4s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+}
+.events::before {
+    content: "";
+    position: absolute;
+    right: 30px;
+    top: 200px;
+}
+.events::after {
+    content: "";
+    position: absolute;
+    left: 30px;
+    bottom: 217px;
+}
+.events .container {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.events .image {
+    flex-basis: 38%;
+}
+.events .image img {
+    width: 100%;
+}
+.events .content {
+    flex-basis: 60%;
+    text-align: center;
+}
+.events .content .box {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.events .content .time {
+    width: 81px;
+    line-height: 81px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: .4rem;
+}
+.events .content .time:hover,
+.events .content .time:hover .caption {
+    border-color: var(--main-Color);
+}
+.events .content .time span {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--main-Color);
+}
+.events .content .time .caption {
+    border-top: 1px solid #ccc;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1.5rem 0;
+    text-transform: capitalize;
+    line-height: 0;
+}
+.events .content h2 {
+    font-size: 3rem;
+    margin: 3rem 0px 1.9rem;
+}
+.events .content p {
+    line-height: 1.7;
+    font-size: 1.9rem;
+    color: #777;
+}
+.events .subscribe {
+    padding-top: 6rem;
+}
+.events .subscribe form {
+    background-color: #f6f5f5;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    display: flex;
+    gap: 1.3rem;
+    width: fit-content;
+    margin: 0 auto;
+}
+.events .subscribe form input[type="email"] {
+    padding: 1.8rem 1rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 2.2rem;
+    width: 35rem;
+    outline: none;
+    font-size: 1.5rem;
+}
+.events .subscribe form input[type="email"]:focus::placeholder {
+    color: #fff;
+    transition: var(--main-transition);
+}
+.events .subscribe form input[type="submit"] {
+    padding: 1.8rem 2rem;
+    border: none;
+    color: #fff;
+    background-color: var(--main-Color);
+    border-radius: 2.2rem;
+    font-size: 1.5rem;
+    outline: none;
+    cursor: pointer;
+}
+.events .subscribe form input[type="submit"]:hover {
+    background-color: var(--second-color);
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    } to {
+        transform: scale(1.3);
+    }
+}
+/* END EVENTS SECTION STYLE  */
