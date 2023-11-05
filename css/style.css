@@ -766,3 +766,54 @@ header nav ul li.other_links:hover .mega_menu {
     color: var(--main-Color);
 }
 /* END SERVICES SECTION STYLE  */
+/* START SKILLS SECTION STYLE  */
+.skills .container {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills .left {
+    flex-basis: 45%;
+}
+.skills .left img {
+    width: 100%;
+}
+.skills .right {
+    flex-basis: 53%;
+}
+.skills .right .skill {
+    margin-bottom: 1.5rem;
+}
+.skills .right .skill h2 {
+    margin-bottom: 1.3rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.skills .right .skill .progress {
+    width: 100%;
+    height: 28px;
+    background-color: #ececec;
+    position: relative;
+}
+.skills .right .skill .progress .perc {
+    content: "";
+    position: absolute;
+    top: -34px;
+    right: 0;
+    padding: 0.3rem 0.9rem;
+    border: 1px solid #000;
+    border-radius: 0.3rem;
+    color: var(--main-Color);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.skills .right .skill .progress span {
+    display: block;
+    height: 100%;
+    width: 0;
+    background-color: var(--main-Color);
+    transition: var(--main-transition);
+}
+/* END SKILLS SECTION STYLE  */
