@@ -550,3 +550,55 @@ header nav ul li.other_links:hover .mega_menu {
     transition: var(--main-transition);
 }
 /* END FEATURES SECTION STYLE */
+/* START TESTIMONIALS SECTION STYLE */
+.testimonials .container {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    align-items: center;
+}
+.testimonials .testimonial {
+    padding: 1.6rem 1.4rem;
+    background: #fff;
+    position: relative;
+    border-radius: 7px;
+}
+.testimonials .testimonial img {
+    position: absolute;
+    top: -37px;
+    right: -21px;
+    height: 9rem;
+    border-radius: 50%;
+    border: 10px solid #ececec;
+}
+.testimonials .testimonial h2 {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+}
+.testimonials .testimonial span.job {
+    color: #777;
+    font-size: 1.5rem;
+    display: block;
+    padding-top: 0.9rem;
+    text-transform: capitalize;
+}
+.testimonials .testimonial .rating {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+.testimonials .testimonial .rating i {
+    font-size: 1.6rem;
+    margin-right: 0.3rem;
+    color: orange;
+}
+.testimonials .testimonial .rating i.fa-regular {
+    color: black;
+}
+.testimonials .testimonial p {
+    line-height: 1.7;
+    color: #777;
+    font-size: 1.7rem;
+}
+/* END TESTIMONIALS SECTION STYLE */
