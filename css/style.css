@@ -237,3 +237,92 @@ header nav ul li.other_links:hover .mega_menu {
 }
 /* END MEGA MENU STYLE */
 /* END HEADER STYLE  */
+/* START LANDING PAGE STYLE  */
+.landing {
+    position: relative;
+}
+.landing .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 12rem;
+    min-height: calc(100vh - 61px);
+}
+.landing::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    width: 100%;
+    clip-path: polygon(-40% 100%, 100% 100%, 100% 0%);
+    height: 15rem;
+    background-color: #fff;
+}
+.landing .container .text {
+    flex-basis: 45%;
+}
+.landing .container .image {
+    flex-basis: 55%;
+}
+.landing .container .text h1 {
+    font-size: 3.6rem;
+    margin: 1rem 0;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+}
+.landing .container .text p {
+    font-size: 2.2rem;
+    color: #666;
+    line-height: 1.8;
+    text-transform: capitalize;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.landing .container .image img {
+    height: 37rem;
+    animation: up_down 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    position: relative;
+    z-index: 99;
+}
+@keyframes up_down {
+    from {
+        transform: translateY(-40px);
+    } to {
+        transform: translateY(40px);
+    }
+}
+.next_section {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    color: var(--main-Color);
+    font-weight: bold;
+    z-index: 999;
+    animation: down_up 1.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes down_up {
+    0%,
+    10%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40%,
+    60% {
+        transform: translateY(-15px);
+    }
+}
+/* END LANDING PAGE STYLE  */
