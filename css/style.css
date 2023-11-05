@@ -1480,3 +1480,24 @@ footer .copy {
     text-align: center;
 }
 /* END FOOTER STYLE  */
+/* SATRT BACK TO TOP STYLE  */
+.back_to_top {
+    position: fixed;
+    bottom: 1rem;
+    right: 0.8rem;
+    width: 4rem;
+    height: 4rem;
+    background: var(--main-Color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    z-index: 999999;
+}
+.back_to_top i {
+    font-size: 2.2rem;
+    color: #fff;
+}
+/* END BACK TO TOP STYLE  */
