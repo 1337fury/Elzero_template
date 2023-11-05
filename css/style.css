@@ -1377,3 +1377,106 @@ section.discount {
     text-transform: capitalize;
 }
 /* END DISCOUNT SECTION STYLE */
+/* START FOOTER STYLE  */
+footer {
+    background-color: #191919;
+    color: #b9b9b9;
+}
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    gap: 4rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+footer .find_us h1 {
+    font-size: 3.8rem;
+    color: #f6f5f5;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+footer .find_us .social i {
+    display: inline-block;
+    font-size: 1.8rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    background-color: #313131;
+    color: #b9b9b9;
+    margin-right: .6rem;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+footer .find_us .social i:first-child:hover {
+    background-color: #1877f2;
+}
+footer .find_us .social i:nth-child(2):hover {
+    background-color: #1da1f2;
+}
+footer .find_us .social i:last-child:hover {
+    background-color: #ff0000;
+}
+footer .find_us p {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: #b9b9b9;
+}
+footer .links ul li {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(235, 230, 230, 0.521);
+}
+footer .links ul li:last-child {
+    border-bottom: none;
+}
+footer .links ul li:hover a {
+    color: #fff;
+    padding-left: 10px;
+    transition: var(--main-transition);
+}
+footer .links ul li a {
+    font-size: 1.6rem;
+    color: #b9b9b9;
+}
+footer .links ul li a i {
+    color: var(--main-Color);
+    margin-right: .8rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+footer .adresses .adress {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #b9b9b9;
+    display: flex;
+    align-items: center;
+}
+footer .adresses .adress i {
+    font-size: 2.2rem;
+    color: var(--main-Color);
+    margin-right: 1.8rem;
+}
+footer .adresses .adress .tel {
+    display: flex;
+    flex-direction: column;
+}
+footer .images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-content: flex-start;
+}
+footer .images img {
+    height: 7rem;
+    border: 0.4rem solid #fff;
+}
+footer .copy {
+    padding: 1.6rem 0;
+    border-top: 1px solid #ddd;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+/* END FOOTER STYLE  */
