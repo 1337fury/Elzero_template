@@ -682,3 +682,87 @@ header nav ul li.other_links:hover .mega_menu {
     line-height: 1.7;
 }
 /* END TEAM MEMBERSTEAM MEMBERS SECTION STYLE  */
+/* START SERVICES SECTION STYLE  */
+.services .container {
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+.services .service {
+    text-align: center;
+    padding-top: 4rem;
+    background-color: #fff;
+    flex-basis: 30.3%;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    position: relative;
+}
+.services .service::before, 
+.services .service::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    width: 0;
+    height: 4px;
+    background-color: var(--main-Color);
+}
+.services .service::before {
+    left: 0;
+}
+.services .service::after {
+    right: 0;
+}
+.services .service:hover {
+    transform: translateY(-6px);
+    transition: var(--main-transition);
+}
+.services .service:hover::before,
+.services .service:hover::after {
+    width: 50%;
+    transition: var(--main-transition);
+}
+
+.services .service i {
+    display: block;
+    font-size: 6rem;
+    color: #ccc;
+}
+.services .service h2 {
+    font-size: 2.4rem;
+    color: var(--main-Color);
+    text-transform: capitalize;
+    padding: 2rem 0 4rem;
+}
+.services .service .bottom {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fafafa;
+}
+.services .service .bottom .num {
+    font-size: 3rem;
+    color: #fff;
+    background-color: var(--main-Color);
+    font-weight: bold;
+    padding: .4rem 0;
+    width: 9rem;
+    text-align: center;
+    position: relative;
+}
+.services .service .bottom .num::after {
+    content: "";
+    position: absolute;
+    right: -43px;
+    bottom: 0;
+    height: 100%;
+    width: 6rem;
+    background: #ececec;
+    transform: skewX(-27deg);
+}
+.services .service .bottom a {
+    padding: 1.2rem .6rem;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: var(--main-Color);
+}
+/* END SERVICES SECTION STYLE  */
