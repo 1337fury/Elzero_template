@@ -1501,3 +1501,133 @@ footer .copy {
     color: #fff;
 }
 /* END BACK TO TOP STYLE  */
+/* START RESPONSIVE STYLE  */
+
+/* large */
+@media (max-width: 1199px) {
+    .pricing .container .card:nth-child(2) {
+        margin-top: 0;
+    }
+}
+  /* Medium */
+  @media (max-width: 992px) {
+    html {
+        font-size: 60.5%;
+    }
+    .landing .container {
+        justify-content: center;
+    }
+    .landing .container .text {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .landing .container .image {
+        display: none;
+    }
+    .gallery .container .image {
+        flex-basis: 48%;
+    }
+    .services .service {
+        flex-basis: 47%;
+    }
+    .skills .right {
+        flex-basis: 100%;
+    }
+    .skills .left {
+        flex-basis: 0;
+        display: none;
+    }
+    .works .container {
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+    .works .image {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .works .content {
+        flex-basis: 100%;
+    }
+    .events .image {
+        flex-basis: 0;
+        display: none;
+    }
+    .events .content {
+        flex-basis: 100%;
+    }
+    .videos .container {
+        grid-template-columns: 1fr;
+    }
+    section.discount {
+        flex-wrap: wrap;
+    }
+    .discount .left,
+    .discount .right {
+    flex-basis: 100%;
+    }
+    
+  }
+
+  /* Small */
+  @media (max-width: 768px) {
+    html {
+        font-size: 55.5%;
+    }
+    header .container {
+        flex-direction: column;
+    }
+    header .logo {
+        font-size: 3.5rem;
+    }
+    header nav ul li a {
+        padding: 1.2rem 1.5rem 1.2rem
+    }
+    .mega_menu {
+        grid-template-columns: 1fr;
+    }
+    .mega_menu .image {
+        display: none;
+    }
+    .services .service {
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 550px) {
+    .mega_menu .links {
+        gap: 0;
+        flex-wrap: wrap;
+    }
+    .mega_menu .links ul {
+        flex-basis: 100%;
+    }
+    .gallery .container .image {
+        flex-basis: 100%;
+    }
+    .works .content .box {
+        padding: 1.8rem 1rem;
+    }
+    .events .subscribe form {
+        flex-wrap: wrap;
+    }
+    .events .subscribe form input[type="email"] {
+        flex-basis: 100%;
+        border-radius: 0;
+    }
+    .events .subscribe form input[type="submit"] {
+        flex-basis: 100%;
+        border-radius: 0;
+    }
+    .discount  .left h1,
+    .discount  .right h1 {
+        font-size: 3.2rem;
+    }
+}
+@media (max-width: 380px) {
+    .container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* END RESPONSIVE STYLE  */
