@@ -117,3 +117,123 @@ section:nth-of-type(odd) {
     background-color: #fff;
 }
 /* END MAIN RULES  */
+/* START HEADER STYLE  */
+header {
+    box-shadow: 0 1px 4px #c1c1c147;
+    background-color: #fff;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+header .logo {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: var(--main-Color);
+}
+header nav ul li {
+    display: inline-block;
+}
+header nav ul li a {
+    display: inline-block;
+    color: var(--black);
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    padding: 2rem 2.5rem 2rem;
+    position: relative;
+    transition: var(--main-transition);
+}
+header nav > ul > li > a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    top: 0;
+    height: 4px;
+    background-color: var(--main-Color);
+    left: -100%;
+    visibility: hidden;
+    transition: width .3s linear;
+}
+header nav > ul > li > a:hover {
+    background-color: #fafafa;
+    color: var(--main-Color);
+}
+header nav ul li a:hover::before {
+    left: 0;
+    visibility: visible;
+    width: 100%;
+}
+header nav ul li.other_links:hover .mega_menu {
+    opacity: 1;
+    top: calc(100% + 1px);
+    z-index: 999;
+    overflow: hidden;
+}
+/* START MEGA MENU STYLE */
+.mega_menu {
+    padding: 3rem 3rem;
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    gap: 2rem;
+    background-color: #fff;
+    border-bottom: 4px solid var(--main-Color);
+    position: absolute;
+    width: 100%;
+    top: calc(100% + 100px);
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: var(--main-transition);
+}
+.mega_menu .image img {
+    max-width: 100%;
+}
+.mega_menu .links {
+    font-size: 1.8rem;
+    display: flex;
+    gap: 3rem;
+}
+.mega_menu .links ul {
+    width: 50%;
+}
+.mega_menu .links ul li {
+    display: block;
+}
+.mega_menu .links ul li:not(:last-child) {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--section-background);
+}
+.mega_menu .links ul li a {
+    display: block;
+    padding: 1.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--main-Color);
+    transition: var(--main-transition);
+    white-space: nowrap;
+    position: relative;
+}
+.mega_menu .links ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    transition: width .3s;
+}
+.mega_menu .links ul li a:hover::before {
+    background-color: #fafafa;
+    width: 100%;
+}
+.mega_menu .links ul li a i {
+    margin-right: 1.2rem;
+    font-size: 1.7rem;
+}
+/* END MEGA MENU STYLE */
+/* END HEADER STYLE  */
