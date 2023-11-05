@@ -23,3 +23,97 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+.heading {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid #000000;
+    text-transform: uppercase;
+    padding: 1rem 1.3rem;
+    font-size: 1.5rem;
+    position: relative;
+    transition: border-color var(--main-transition) .3s;
+}
+.heading h1 {
+    margin: 0;
+    color: black;
+    position: relative;
+    z-index: 9999;
+    transition: var(--main-transition);
+}
+.heading::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -24px;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: var(--second-color);
+    border-radius: 50%;
+    transition:  border-radius .3s, left .3s, height .3s ease-in, width .3s ease-in ;
+}
+.heading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -24px;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: var(--second-color);
+    border-radius: 50%;
+    transition:  border-radius .3s, right .3s, height .3s ease-in, width .3s ease-in;
+}
+.heading:hover::before {
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 0;
+}
+.heading:hover::after {
+    right: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 0;
+}
+.heading:hover h1 {
+    color: #fff;
+}
+.heading:hover {
+    border-color: #fff;
+}
+section {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+}
+section:nth-of-type(odd) {
+    background-color: #fff;
+}
+/* END MAIN RULES  */
