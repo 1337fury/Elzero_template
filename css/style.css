@@ -1005,3 +1005,209 @@ header nav ul li.other_links:hover .mega_menu {
     }
 }
 /* END EVENTS SECTION STYLE  */
+/* START PRICING SECTION STYLE  */
+.pricing {
+    position: relative;
+}
+.pricing::before,
+.pricing::after {
+    position: absolute;
+    content: "";
+    width: 15rem;
+    height: 17rem;
+    background-image: url("../image/dots.png");
+}
+.pricing::before {
+    right: 0;
+    top: 10rem;
+}
+.pricing::after {
+    left: 0;
+    bottom: 0;
+}
+.pricing .container {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    gap: 2rem;
+}
+.pricing .card {
+    background-color: #fff;
+    padding-bottom: 4rem;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    position: relative;
+    z-index: 999;
+}
+.pricing .card::before,
+.pricing .card::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 50%;
+    background-color: #f6f6f6;
+    z-index: -1;
+}
+.pricing .card::before {
+    left: 0;
+    bottom: 0;
+}
+.pricing .card::after {
+    right: 0;
+    top: 0;
+}
+.pricing .card:hover::before,
+.pricing .card:hover::after {
+    width: 100%;
+    transition: var(--main-transition);
+}
+.pricing .card:nth-child(2):hover .popular::after {
+    border-right-color: #f6f6f6;
+}
+.pricing .container .card:nth-child(2) {
+    transform: translateY(-2rem);
+    position: relative;
+}
+.pricing .container .card .popular {
+    position: absolute;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 3rem 0 1rem;
+    top: 0;
+    right: 0;
+    background-color: var( --main-Color);
+    transform: rotate(90deg) translate(100%, 15px);
+    transform-origin: right top;
+}
+.pricing .container .card .popular::after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 18px;
+    border-color: transparent;
+    border-right-color: white;
+    bottom: 0;
+    right: 0;
+}
+.pricing .card .head {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 2.3rem 0;
+}
+.pricing .card .head h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: -2px;
+}
+.pricing .card .head img {
+    height: 10rem;
+}
+.pricing .card .head span.price {
+    font-size: 6rem;
+    color: var(--main-Color);
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+.pricing .card .head span.date {
+    font-size: 1.8rem;
+    color: #777;
+}
+.pricing .card .main .offer {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.5rem 1rem;
+    border-top: 1px solid #ccc;
+}
+.pricing .card .main .offer i {
+    color: var(--main-Color);
+    font-size: 1.9rem;
+    margin-right: 1.5rem;
+}
+.pricing .card .link {
+    margin-top: 3rem;
+    text-align: center;
+}
+.pricing .card .link a {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 1.5rem 2.2rem;
+    border-radius: .4rem;
+    color: var(--main-Color);
+    border: 2px solid var(--main-Color);
+}
+.pricing .card .link a:hover {
+    color: #fff;
+    background-color: var(--second-color);
+    transition: var(--main-transition);
+}
+/* END PRICING SECTION STYLE  */
+/* START TOP VEDIOS SECTION STYLE  */
+.videos .container {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+}
+.videos .menu {
+    border: 1px solid #ccc;
+}
+.videos .menu .title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7rem 1rem;
+    font-size: 1.2rem;
+    background-color: #f6f6f6;
+    align-items: center;
+}
+.videos .menu .title i {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.videos .menu .box {
+    padding: 1.7rem 1rem;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+.videos .menu .box:hover {
+    background-color: #f6f5f5;
+}
+.videos .menu .box:hover span.video {
+    color: var(--main-Color);
+}
+.videos .menu .box span {
+    display: block;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+}
+.videos .menu .box span.video {
+    margin-bottom: 1rem;
+}
+.videos .menu .box span.duration {
+    color: #777;
+}
+.videos .display {
+    padding: 1.2rem;
+    background-color: #ccc;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.videos .display img {
+    width: 100%;
+}
+.videos .footer {
+    background-color: #fff;
+    font-size: 1.5rem;
+    padding: 2rem 1.2rem;
+    margin-top: 1rem;
+}
+/* END TOP VEDIOS SECTION STYLE  */
